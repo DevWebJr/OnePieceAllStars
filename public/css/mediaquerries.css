@@ -1,0 +1,242 @@
+                          /*************************/
+                         /*** | MediaQuerries | ***/
+                        /*************************/
+
+   /*******************/
+  /*** | Mobiles | ***/
+ /*******************/
+/*Galaxy S5*/ /*iPhone5/SE*/ /*iPhone 6/7/8*/ /*iPhone X*/
+@media only screen and (max-width: 400px)
+{     
+      /*****************************/
+     /*** | le menu hamburger | ***/
+    /*****************************/
+    #menuNavigation{
+        display:none;
+    }    
+    
+    .hamburgerActivated #sidebarHamburger{
+        transform: translateX(0);
+    }
+    
+    #listeOnglets{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        margin:0;
+        padding: 0;
+    }
+    
+    #sidebarHamburgerHeader{
+        margin-bottom:0;
+        padding-bottom: 0;
+    }
+
+    #sidebarHamburgerBody{
+        background-color:white;
+        margin:0;
+        padding: 0;
+    }
+    
+    .onglet{
+        margin:2vw;
+        font-size: 1.3em;
+        padding:2vw;
+        align-content:center;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titreOnglet{
+        display: block;
+        justify-content: flex-start;
+        align-content:center;
+        align-items:center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .titreOnglet:hover{
+        border-bottom:none;
+    }
+
+    .ongletDeroulant{
+        display: block;
+        font-size: 1.3em;
+        padding-top:2vw;
+        padding-bottom:2vw;
+        align-content:center;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #listeOnglets :last-child{
+        text-align: left;
+    } 
+
+    .listeDeroulante{
+        align-content:center;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        margin-top:5vw;
+    }
+
+    #sidebarHamburgerBody li:hover{
+        background-color:#E8ED99;
+    }
+}
+
+  /*************************************************************************/
+ /*************************************************************************/
+/*************************************************************************/
+   
+   /*******************/
+  /*** | Mobiles | ***/
+ /*******************/
+ /*Pixel2*/ /*iPhone 6/7/8 Plus*/
+@media only screen and (min-width: 401px) and (max-width: 701px) 
+{
+      /*****************************/
+     /*** | le menu hamburger | ***/
+    /*****************************/
+    .hamburgerActivated #sidebarHamburger{
+        transform: translateX(0);
+    }
+    
+    #listeOnglets{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        margin:0;
+        padding: 0;
+    }
+    
+    #sidebarHamburgerHeader{
+        margin-bottom:0;
+        padding-bottom: 0;
+    }
+
+    #sidebarHamburgerBody{
+        background-color:white;
+        margin:0;
+        padding: 0;
+    }
+   
+    .onglet{
+        margin:2vw;
+        font-size: 1.5em;
+        padding-bottom:2vw;
+        align-content:center;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #listeOnglets :first-child, :nth-child(2), :nth-child(3), :last-child{
+        text-align: left;
+    }
+
+    .listeDeroulante{
+        align-content:center;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #sidebarHamburgerBody li:hover{
+        background-color:#E8ED99;
+    }
+}
+
+  /*************************************************************************/
+ /*************************************************************************/
+/*************************************************************************/
+   
+   /*********************/
+  /*** | Tablettes | ***/
+ /*********************/
+/*iPad*/   /*iPad Pro*/
+@media only screen and (min-width: 701px) and (max-width: 1024px) 
+{
+      /*****************************/
+     /*** | le menu hamburger | ***/
+    /*****************************/
+    #menuNavigation{
+        display:none;
+    }    
+    
+    .hamburgerActivated #sidebarHamburger{
+        transform: translateX(0);
+    }
+    
+    #listeOnglets{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        margin:0;
+        padding: 0;
+    }  
+    
+    #listeOnglets :last-child{
+        text-align: left;
+    }
+
+    #sidebarHamburgerHeader{
+        margin-bottom:0;
+        padding-bottom: 0;
+    }
+
+    #sidebarHamburgerBody{
+        background-color:white;
+        margin:0;
+        padding: 0;
+    }
+    
+    .onglet{
+        margin:2vw;
+        font-size: 2em;
+        padding-top:2vw;
+        padding-bottom:2vw;
+    }
+    
+    .titreOnglet{
+        display: flex;
+        justify-content: flex-start;
+        align-content:center;
+        align-items:center;
+    }
+
+    .titreOnglet:hover{
+        border-bottom:none;
+    }
+
+    .ongletDeroulant{
+        height: auto;
+        width: auto;
+        font-size: 1.3em;
+        padding-top:2vw;
+        padding-bottom:2vw;
+        align-content:center;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .listeDeroulante{
+        align-content:center;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    #sidebarHamburgerBody li:hover{
+        background-color:#E8ED99;
+    }
+
+}
+
+  /*************************************************************************/
+ /*************************************************************************/
+/*************************************************************************/

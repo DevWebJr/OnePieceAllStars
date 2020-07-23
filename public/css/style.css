@@ -1,0 +1,197 @@
+        /***********************************************************/
+       /***********************************************************/
+      /******************* | Feuilles De Style  | ****************/
+     /***********************************************************/
+
+   /***********************************************************/
+  /***********************************************************/
+ /********************* | Menu Hamburger | ******************/
+/***********************************************************/
+
+header, nav{
+    padding: 0;
+    margin: 0;
+}
+
+#menuHamburger, #menuNavigation {
+    display:inline;
+    margin: 0;
+    padding: 0;
+}
+
+#menuNavigation{
+    position: fixed;
+    background-color:white;
+    display: inline-block;
+    width: 100%;
+}
+
+  /***********************/
+ /*** | les onglets | ***/
+/***********************/
+#listeOnglets{
+    display:flex;
+}
+
+.onglet{
+    flex: 1;
+    display: inline-block;
+    padding:0;
+    margin:0 0.7vw 0 0.7vw;
+}
+
+.onglet:before{
+    content:'';
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.ongletDeroulant{
+    padding-top:0.8vw;
+    margin:0;
+    margin:0;
+}
+
+.titreOnglet{
+    font-size: 1.3em;
+    padding-top:0.8vw;
+    color:#9bc0c7;
+    font-weight:bold;
+    text-align: center;
+}
+
+.titreOnglet:hover{
+    color: rgba(130, 223, 200, 0.938);
+    border-bottom: solid 2px rgba(130, 223, 200, 0.938);
+}
+
+  /**********************/
+ /*** | les listes | ***/
+/**********************/
+a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #38D1FB;
+}
+li{
+    list-style-type: none;
+    color:#97BEC5;
+}
+
+.liste{
+    display:none;
+    background-color:white;
+    padding-top:0.8vw;
+    margin:0;
+}
+
+.liste:hover{
+    display: inline-block;
+}
+
+.listeDeroulante{
+    text-align: left;
+    display: inline-block;
+    padding:0;
+    margin:0;
+    position : fixed;
+}
+
+.liensListeDeroulante{
+    margin: 0.3vw 0 0.3vw 0;
+    color: rgb(98, 235, 235);
+}
+
+
+.listeDeroulante:hover > .liste{
+    display:block;
+}
+.liensListeDeroulante:hover{
+    color: rgb(98, 235, 235);
+    border-bottom: solid 2px rgb(98, 235, 235) ;
+}
+
+  /*******************************/
+ /*** | le bouton Hamburger | ***/
+/*******************************/
+#boutonHamburger{
+    display:none;       /**non apparent, il ne s'affiche qu'en cas de réduction de l'écran(mediaQuerry).**/
+    cursor: pointer;
+    color:#97BEC5;
+    background:none;
+    border:none;
+    font-size:1.5em;
+    padding: 0;
+    vertical-align: top;
+    line-height: 45px;
+    float: right;
+    margin-left: 0;
+    margin-right: 2vw;
+}
+
+  /**************************/
+ /*** | le menu masqué | ***/
+/**************************/
+#hamburgerOverlay{
+    display:none;         /**non apparent, ceci ne s'affiche qu'en cas de réduction de l'écran(mediaQuerry).**/
+    position:fixed;      /*présent malgré le scroll*/
+    z-index:10;         /*mise en avant sur la page*/
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, .4);
+}
+
+  /***********************/
+ /*** | la side bar | ***/
+/***********************/
+#sidebarHamburger{
+    display:none;          /**non apparent, ceci ne s'affiche qu'en cas de réduction de l'écran(mediaQuerry).**/
+    position:fixed;       /*présent malgré le scroll*/
+    z-index:20;          /*mise en avant sur la page*/
+    width:80%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:white;
+    transform:translateX(-100%);         /**Ce procédé permet de déplacer la sidebar entièrement, vers la gauche de la page**/
+    transition: transform .2s ease-out; /**gère la vitesse de la transition**/
+}
+
+#sidebarHamburgerHeader{
+    background: url(../images/wallpaperHamburger.jpg)center;
+    height:40vw;
+}
+
+#sidebarHamburgerBody{
+    padding:16px 8px;
+}
+
+#boutonHamburger, #sidebarHamburger, .hamburgerActivated #hamburgerOverlay{
+    display:inline-block;
+}
+
+/**Body**/
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+main{
+    padding: 0;
+    margin: 1vw;
+    border: solid brown 1px;
+    height: auto;
+    width: auto;
+}
+
+/**Footer**/
+footer{
+    padding: 0;
+    margin: 1vw;
+    border: solid red 1px;
+}
