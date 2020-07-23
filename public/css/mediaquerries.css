@@ -26,6 +26,10 @@
         margin:0;
         padding: 0;
     }
+
+    #listeOnglets .onglet:first-child, :nth-child(2), :nth-child(3), :last-child{
+        text-align: left;
+    }
     
     #sidebarHamburgerHeader{
         margin-bottom:0;
@@ -139,6 +143,10 @@
         text-align: left;
     }
 
+    #listeOnglets .onglet:first-child, :nth-child(2), :nth-child(3), :last-child{
+        text-align: left;
+    }
+
     .listeDeroulante{
         align-content:center;
         align-items:center;
@@ -223,6 +231,10 @@
         align-items:center;
         justify-content: center;
         text-align: center;
+    }
+
+    #listeOnglets .onglet:first-child, :nth-child(2), :nth-child(3), :last-child{
+        text-align: left;
     }
     
     .listeDeroulante{

@@ -49,13 +49,13 @@ header, nav{
 .ongletDeroulant{
     padding-top:0.8vw;
     margin:0;
-    margin:0;
+    padding:0;
 }
 
 .titreOnglet{
     font-size: 1.3em;
     padding-top:0.8vw;
-    color:#9bc0c7;
+    color:#03CAE3;
     font-weight:bold;
     text-align: center;
 }
@@ -161,8 +161,8 @@ li{
 }
 
 #sidebarHamburgerHeader{
-    background: url(../images/wallpaperHamburger.jpg)center;
-    height:40vw;
+    height:66vw;
+    background: url(../images/wallpaperHamburger.gif)center;
 }
 
 #sidebarHamburgerBody{
@@ -179,19 +179,29 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color:white;
+    height: 50vw;
+    background-color:#03CAE3;
 }
 main{
+    display: flex;
+    flex-direction: column;
     padding: 0;
-    margin: 1vw;
-    border: solid brown 1px;
+    margin: 5vw 0 5vw 0;
     height: auto;
     width: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#wallpaper{
+    height: 25vw;
+    width: 25vw;
+    border: solid white 5px;
 }
 
 /**Footer**/
 footer{
     padding: 0;
     margin: 1vw;
-    border: solid red 1px;
 }

@@ -29,6 +29,12 @@ class Kingdom
      */
     private $arc;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Place::class, inversedBy="kingdoms")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $place;
+
     public function __construct()
     {
         $this->arc = new ArrayCollection();
@@ -81,4 +87,17 @@ class Kingdom
 
         return $this;
     }
+
+    public function getPlace(): ?Place
+    {
+        return $this->place;
+    }
+
+    public function setPlace(?Place $place): self
+    {
+        $this->place = $place;
+
+        return $this;
+    }
+
 }
